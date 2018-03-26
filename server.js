@@ -7,7 +7,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.use((request, response, next) => {
-	response.send('Website under maintenance');
+	response.send('Website under maintenance, ABORT!!!');
 	// response.render('maintenance.hbs')
 	next();
 });
